@@ -30,6 +30,7 @@ public class UnitMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
+        // 이동 속도
         direction *= 5;
 
         _rigidbody.velocity = direction;

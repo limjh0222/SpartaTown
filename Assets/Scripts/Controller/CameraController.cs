@@ -13,6 +13,7 @@ public class CameraController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // 카메라 위치 = 플레이어 위치 + 카메라 z 값
         transform.position = _player.transform.position + _cameraPositionZ;
     }
 }

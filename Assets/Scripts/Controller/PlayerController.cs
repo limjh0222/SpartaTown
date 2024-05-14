@@ -13,7 +13,7 @@ public class PlayerController : UnitController
 
     public void OnMove(InputValue value)
     {
-        // WASD 입력을 정규화 하여 받기
+        // WASD 입력을 정규화하고 받기
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
     }
